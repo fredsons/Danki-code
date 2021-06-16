@@ -1,0 +1,642 @@
+
+/*------Reset da página------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+/*-------Header-----*/
+/*-------Container---------*/
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    min-height: 800px;
+    padding: 40px 2%;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position:center ;
+    background-image: url('../imagens/capa.png');
+    font-weight: 300;
+}
+
+header .logo{
+    float: left;
+    width: 160px;
+    height: 40px;
+    background-image: url(../imagens/logo.png);
+    background-repeat: no-repeat;
+    background-size: 160px
+}
+
+header nav{
+    float: right;
+}
+
+nav.mobile-menu{
+    cursor: pointer;
+    display: none;
+    width: 42px;
+    height: 42px;
+    background-image: url(../imagens/menu2.png);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover{
+    width: 50px;
+    height: 45px;
+}
+
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+
+nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+    text-align: center;
+    background-color: #fff;
+}
+
+nav.mobile-menu ul li{
+    border-bottom: 1px solid #472562;
+    padding: 8px 0;
+    transition: 0.3s;
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: #c5b3d3;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+nav.mobile-menu ul li a{
+    color: #472562;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+
+header nav.desktop-menu li{
+    padding: 0 20px;
+    float: left;
+}
+
+header nav.desktop-menu li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}  
+
+header nav.desktop-menu li a:hover{
+    text-shadow: 5px 5px 5px;
+}
+
+.chamada1{
+    max-width: 580px;
+    float: right;
+    margin: 140px 150px;
+}
+
+.chamada1 h2{
+    font-weight:300;
+    font-size:40px;
+    color: #fff;
+}
+
+.chamada1 p{
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+/*-----Sessão1-------*/
+
+section.sessao1{
+    width: 100%;
+    background-color: #472562;
+    padding-right:0 2%;
+    height: 400px;
+}
+
+section.sessao1 .container{
+    max-width: 1000px;
+    height: calc(100% + 30px);
+}
+
+.texto-sessao1{
+    float: left;
+    color: #fff;
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 80px;
+    position: relative;
+    left: 60px;
+}
+
+.texto-sessao1 h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.texto-sessao1 p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.texto-sessao1 ul{
+    font-size: 15px;
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+.texto-sessao1 ul li{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn1-texto{
+    background-color: #FF703D;
+    border: 0;
+    width: 165px;
+    height: 44px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top:16px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.btn1-texto:hover{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    box-shadow: 8px 8px 8px;
+}
+
+.device-sessao1{
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -30px;
+    height: 100%;
+    background-image: url(../imagens/device.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*-----Sessão2-------*/
+
+.sessao2{
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sessao2 .cointainer{
+    max-width: 1000px;
+}
+
+.sessao2 h2{
+    color: #472663;
+}
+
+.sessao2 p{
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+    color: #472663;
+}
+
+.sessao2 img{
+    box-shadow: 8px 8px 8px;
+    position: relative;
+    top: 70px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*-----Sessão3-------*/
+
+.sessao3{
+    width: 100%;
+}
+
+.parte1{
+    float: left;
+    width: 50%;
+    padding: 140px 0  90px 0;
+    background-color: #835FA7;
+    color: #fff;
+}
+
+.wraper-parte1{
+    max-width: 600px;
+    float: right;
+    padding: 0 30px;
+}
+
+.parte1 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.parte1 p{
+    font-size: 15px;
+    line-height:25px;
+    margin-top: 10px;
+}
+
+.parte2{
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+}
+
+.sobre-autor{
+    float: left;
+    max-width: 600px;
+    padding-left:30px;
+}
+
+.titulo-autor{
+    float: left;
+    width: 100%;
+}
+
+.titulo-autor h2{
+    padding-right: 20px;
+    color: #232323;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.titulo-autor .img-autor img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -4px;
+    border-radius: 20px;
+}
+
+.titulo-autor p{
+    font-size: 13px;
+    color: #232323;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.wraper-titulo-autor{
+    float: left;
+}
+
+.texto-autor{
+    float: left;
+    width:100%;
+    margin-top: 10px;
+}
+
+.texto-autor p{
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider-bullets{
+    width: 100%;
+    float: left;
+    padding-left: 30px;
+    margin-top: 12px;
+}
+
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color:gray;
+    cursor: pointer;
+}
+
+/*-----Sessão4-------*/
+
+section.sessao4{
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+.form{
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.form p {
+    padding-right: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    max-width: 400px;
+}
+
+.form form input[type=text]{
+    width: 90%;
+    margin-top: 8px;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.form form  textarea{
+    max-width: 480px;
+    width: 90%;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 160px;
+    margin-top: 8px;
+}
+
+.form form input[type=submit]{
+    border: 0;
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top:16px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.form form input[type=submit]:hover{
+    color: black;
+    text-transform: uppercase;
+    box-shadow: 8px 8px 8px;
+}
+
+.map-wraper{
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.map-wraper h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.map-wraper3{
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+}
+
+.map-wraper2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+footer{
+    padding: 40px 2%;
+    background: #192123;
+    color: #fff;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+}
+
+
+/*--------Responsividade-------*/
+
+@media screen and (max-width: 830px){
+
+    .chamada1{
+        max-width:none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 170px 0;
+    }
+    
+    .chamada1 h2{
+        font-weight:300;
+        font-size:30px;
+        color: #fff;
+        padding: 0 0px;
+    }
+    
+    .chamada1 p{
+        font-size: 15px;
+        color: #fff;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    header{
+        padding: 40px 2%;
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+    }
+
+    nav.desktop-menu{
+        display: none;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+
+    .chamada1{
+        max-width:none;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    
+    .chamada1 h2{
+        font-weight:300;
+        font-size:30px;
+        color: #fff;
+        padding: 0 0px;
+    }
+    
+    .chamada1 p{
+        font-size: 15px;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    section.sessao1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .texto-sessao1{
+        float: none;
+        margin-top: 0;
+        padding-left: 0;
+        position: static;
+        display: inline-block;
+    }
+
+    .texto-sessao1 ul li{
+        float: none;
+        text-align: left;
+    }
+
+    .texto-sessao1 ul{
+        display: inline-block;
+        margin: 20px;
+    }
+
+
+    .btn1-texto{
+        display: inline-block;
+    }
+
+    .device-sessao1{
+        display: none;
+    }
+
+    .sessao2{
+        padding: 40px 2%;
+    }
+
+    section.sessao4 .container{
+        text-align: center;
+    }
+
+    .form{
+        float: none;
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+
+    .map-wraper{
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+        margin-top: 40px;
+    }
+
+    .map-wraper3{
+        margin-top: 10px;
+        display: inline-block;
+        position: relative;
+        width: 80%;
+        max-width: none;
+        padding-top: 80%;
+    }
+    
+    .map-wraper2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 0;
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 580px){
+    .parte1{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .parte2{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    footer{
+        text-align:center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top: 8px;
+    }
+    
+
+  
+}
